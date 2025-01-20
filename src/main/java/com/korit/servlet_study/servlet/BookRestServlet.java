@@ -1,7 +1,13 @@
 package com.korit.servlet_study.servlet;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+<<<<<<< HEAD
 import com.korit.servlet_study.entity.*;
+=======
+import com.korit.servlet_study.entity.Author;
+import com.korit.servlet_study.entity.Book;
+import com.korit.servlet_study.entity.User;
+>>>>>>> 2eec1839f7f5145b44306a17ea443187a9360713
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,6 +23,7 @@ public class BookRestServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+<<<<<<< HEAD
         Author author = new Author(1, "테스트저자");
         Publisher publisher = new Publisher(10, "테스트출판사");
         BookCategory bookCategory = new BookCategory(100, "테스트카테고리");
@@ -36,6 +43,20 @@ public class BookRestServlet extends HttpServlet {
                 .build();
 
         ObjectMapper objectMapper = new ObjectMapper();
+=======
+
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        Book book = Book.builder()
+                .bookId(1234)
+                .bookName("가가가")
+                .authorName("나나나")
+                .publisherName("다다다")
+                .categoryName("라라라")
+                .imgUrl("http:/")
+                .build();
+
+>>>>>>> 2eec1839f7f5145b44306a17ea443187a9360713
         String jsonUser = objectMapper.writeValueAsString(book);
         System.out.println(jsonUser);
 

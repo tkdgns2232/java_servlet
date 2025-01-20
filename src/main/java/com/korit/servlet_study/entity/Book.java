@@ -22,5 +22,12 @@ public class Book {
     private Publisher publisher;
     private BookCategory bookCategory;
 
+<<<<<<< HEAD
 
+=======
+    private String authorName;
+    private String publisherName;
+    private String categoryName;
+    private String imgUrl;
+>>>>>>> 2eec1839f7f5145b44306a17ea443187a9360713
 }

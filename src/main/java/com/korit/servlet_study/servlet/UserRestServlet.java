@@ -26,10 +26,17 @@ public class UserRestServlet extends HttpServlet {
         String jsonUser = objectMapper.writeValueAsString(user);
         System.out.println(jsonUser);
 
+<<<<<<< HEAD
 //        resp.setHeader("Access-Control-Allow-Origin", "*");
 //        resp.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
 //        resp.setHeader("Access-Control-Allow-Headers", "Content-Type");
 //        resp.setHeader("Access-Control-Allow-Credentials", "ture");
+=======
+        resp.setHeader("Access-Control-Allow-Origin", "*");
+        resp.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
+        resp.setHeader("Access-Control-Allow-Headers", "Content-Type");
+        resp.setHeader("Access-Control-Allow-Credentials", "ture");
+>>>>>>> 2eec1839f7f5145b44306a17ea443187a9360713
 
         resp.setContentType("application/json");
         resp.getWriter().println(jsonUser);
