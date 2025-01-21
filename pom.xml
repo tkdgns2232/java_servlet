@@ -50,12 +50,11 @@
   </dependencies>
 
 
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> 2eec1839f7f5145b44306a17ea443187a9360713
+
+
   <build>
     <plugins>
       <plugin>

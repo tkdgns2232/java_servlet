@@ -10,11 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80a0577c-4f7c-428c-93ce-d796e64588ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/servlet/BookRestServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/servlet/UserRestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/dao/BoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/dto/InsertBoardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/entity/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/service/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/servlet/BoardRestServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/servlet/BookRestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/servlet/BookRestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/servlet/UserRestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/korit/servlet_study/servlet/UserRestServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +37,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "doosan5464"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/tkdgns2232/java_servlet.git",
+    "accountId": "33002d38-ea6a-4be2-a1b2-c0e49b1f0789"
+  }
+}]]></component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -183,8 +200,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -205,6 +222,7 @@
       <workItem from="1736489670566" duration="9242000" />
       <workItem from="1736726635929" duration="8255000" />
       <workItem from="1737097559410" duration="5939000" />
+      <workItem from="1737417522876" duration="22875000" />
     </task>
     <servers />
   </component>
