@@ -23,7 +23,7 @@ public class BoardDao {
         return instance;  // 싱글톤 패턴
     }
     // Optional<> 값이 존재할 수도 있고 아닐 수 도 있다
-    public Optional<Board> save(Board board) {
+    public Board save(Board board) {
         Board insertedBoard = null;
         Connection con = null;
         PreparedStatement ps = null;
@@ -50,7 +50,7 @@ public class BoardDao {
         } finally {
             dBConnectionMgr.freeConnection(con, ps);
         }
-        return Optional.ofNullable(insertedBoard);
+        return insertedBoard;
     }
 }
 
