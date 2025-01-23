@@ -39,10 +39,10 @@ public class SignupRestServlet extends HttpServlet { // HttpServlet으로 받아
 
 
         ResponseDto<?> responseDto = authService.signup(signupDto); // 리턴으로 ResponseDto 받기위해 작성
-        String responseJson = objectMapper.writeValueAsString(responseDto);
+//        String responseJson = objectMapper.writeValueAsString(responseDto);
 
         resp.setStatus(responseDto.getStatus()); // 200인지 400인지 구분 가능하게 해주는 코드
         resp.setContentType("application/json");
-        resp.getWriter().println(responseJson); // 응답해주는 코드
+        resp.getWriter().println(objectMapper.writeValueAsString(responseDto)); // 응답해주는 코드
     }
 }

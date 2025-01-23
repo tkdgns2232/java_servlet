@@ -44,7 +44,7 @@ public class AuthService {
         if(!BCrypt.checkpw(signinDto.getPassword(), foundUser.getPassword())) { // 로그인한 비밀번호와 암호화된 비밀번호가 같은지 확인
             return ResponseDto.fail("사용자 정보를 다시 확인하세요.");
         }
-        return ResponseDto.success(jwtProvider.gernerateToken(foundUser));
+        return ResponseDto.success(jwtProvider.generateToken(foundUser));
 
     }
 }

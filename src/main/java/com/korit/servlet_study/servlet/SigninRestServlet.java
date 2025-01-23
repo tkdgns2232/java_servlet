@@ -38,7 +38,7 @@ public class SigninRestServlet extends HttpServlet {
 
         resp.setContentType("application/json");
         resp.setStatus(responseDto.getStatus());
-        resp.getWriter().write(mapper.writeValueAsString(responseDto));
+        resp.getWriter().println(mapper.writeValueAsString(responseDto));
 
 
 

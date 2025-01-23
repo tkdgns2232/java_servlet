@@ -32,10 +32,10 @@ public class UserRestServlet extends HttpServlet {
 //        resp.setHeader("Access-Control-Allow-Headers", "Content-Type");
 //        resp.setHeader("Access-Control-Allow-Credentials", "ture");
 
-        resp.setHeader("Access-Control-Allow-Origin", "*");
-        resp.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
-        resp.setHeader("Access-Control-Allow-Headers", "Content-Type");
-        resp.setHeader("Access-Control-Allow-Credentials", "ture");
+//        resp.setHeader("Access-Control-Allow-Origin", "*");
+//        resp.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
+//        resp.setHeader("Access-Control-Allow-Headers", "Content-Type");
+//        resp.setHeader("Access-Control-Allow-Credentials", "ture");
 
 
         resp.setContentType("application/json");
