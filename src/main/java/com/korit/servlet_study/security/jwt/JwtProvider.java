@@ -2,6 +2,7 @@ package com.korit.servlet_study.security.jwt;
 
 import com.korit.servlet_study.entity.User;
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
@@ -42,9 +43,11 @@ public class JwtProvider {
     public Claims parseToken(String token) {
         Claims claims = null;
         try {
-            claims = Jwts.parserBuilder()
+            JwtParser jwtParser = Jwts.parserBuilder()
                     .setSigningKey(key)
-                    .build()
+                    .build();
+
+            claims  = jwtParser
                     .parseClaimsJws(removeBearer(token))
                     .getBody();
         } catch (Exception e) {
